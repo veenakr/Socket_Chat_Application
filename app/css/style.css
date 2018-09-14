@@ -1,3 +1,129 @@
-body {
-  margin-top: 30px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#body {
+  background: url('https://previews.123rf.com/images/gorgrigo/gorgrigo1604/gorgrigo160400001/55112056-chat-and-messenger-icon-made-of-stipples-like-sprayed-paint-on-a-brushed-metal-background-chat-or-me.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  height: 30vh;
+  width: 30vw;
+  padding: 40px;
+}
+
+.login {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 50px;
+}
+
+.form {
+  border: none;
+}
+
+.form:hover {
+  border: 1px solid silver;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: #696969;
+  background-color: #dcdcdc;
+}
+
+.well {
+  margin-top: 40px;
+  background: url('https://cdn.xl.thumbs.canstockphoto.com/vector-seamless-mobile-apps-pattern-with-musicchatgalleryspeaking-bubbleemailmagnifying-clipart-vector_csp27947657.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding: 20px 0 20px 20px;
+}
+
+.users-list {
+  margin-right: 90px;
+}
+
+.user {
+  color: #2f4f4f;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.user1 {
+  font-size: 28px;
+}
+.list-group {
+  padding: 30px 20px 20px 0;
+}
+
+.list-group-item {
+  border: 1px solid silver;
+  background: none;
+  color: #696969;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.head {
+  color: #808080;
+  padding: 10px 0 20px 0;
+  font-size: 20px;
+}
+
+.form-message {
+  padding: 10px 0;
+}
+
+.box-input {
+  padding: 10px;
+  background: url('https://cdn.xl.thumbs.canstockphoto.com/vector-seamless-mobile-apps-pattern-with-musicchatgalleryspeaking-bubbleemailmagnifying-clipart-vector_csp27947657.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-control {
+  padding: 10px 0;
+  font-size: 17px;
+  word-break: break-all;
+}
+
+.white {
+  margin: 10px 0;
+  padding: 10px;
+  background: url('https://cdn.xl.thumbs.canstockphoto.com/vector-seamless-mobile-apps-pattern-with-musicchatgalleryspeaking-bubbleemailmagnifying-clipart-vector_csp27947657.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.message {
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+.name {
+  color: #008080;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  color: #696969;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.span {
+  font-size: 18px;
+  font-weight: 400;
 }

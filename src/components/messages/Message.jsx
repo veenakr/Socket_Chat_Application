@@ -26,7 +26,10 @@ class Message extends React.Component {
     var formattedTime = this.formatTime(message.timeStamp);
     return (
       <div className="message">
-        <strong>{message.user}</strong> {formattedTime} - {message.text}
+        <strong className="name">{message.user}</strong> <br />
+        <div className="flex">
+          {message.text} <span className="span">{formattedTime}</span>
+        </div>
       </div>
     );
   }

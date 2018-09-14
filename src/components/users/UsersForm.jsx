@@ -11,13 +11,12 @@ class UserForm extends React.Component {
 
     e.target.elements.uname.value = '';
   }
-
   render() {
     return (
-      <div>
-        <h3>Chat Login</h3>
-        <form onSubmit={this.onSubmit.bind(this)}>
-          <input type="text" className="form-control" name="uname" placeholder="Choose a UserName" />
+      <div className="box">
+        <h3 className="login">Chat Login</h3>
+        <form className="form" onSubmit={this.onSubmit.bind(this)}>
+          <input className="input" type="text" name="uname" placeholder="Choose a UserName" />
         </form>
       </div>
     );

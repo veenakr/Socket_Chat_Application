@@ -19952,15 +19952,38 @@
 	    value: function render() {
 	      return _react2['default'].createElement(
 	        'div',
-	        { className: 'well' },
+	        null,
 	        _react2['default'].createElement(
-	          'h3',
-	          null,
-	          'Messages'
+	          'div',
+	          { className: 'message-list' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'well' },
+	            _react2['default'].createElement(
+	              'h3',
+	              { className: 'user' },
+	              'Messages'
+	            ),
+	            _react2['default'].createElement(
+	              'div',
+	              { className: 'head' },
+	              'Welcome to SockChat!'
+	            )
+	          )
 	        ),
-	        this.props.messages.map(function (message, i) {
-	          return _react2['default'].createElement(_MessageJsx2['default'], { message: message, key: i });
-	        })
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'message-box' },
+	          this.props.messages.map(function (message, i) {
+	            if (i != 0) {
+	              return _react2['default'].createElement(
+	                'div',
+	                { className: 'white' },
+	                _react2['default'].createElement(_MessageJsx2['default'], { message: message, key: i })
+	              );
+	            }
+	          })
+	        )
 	      );
 	    }
 	  }]);
@@ -20037,13 +20060,22 @@
 	        { className: 'message' },
 	        _react2['default'].createElement(
 	          'strong',
-	          null,
+	          { className: 'name' },
 	          message.user
 	        ),
 	        ' ',
-	        formattedTime,
-	        ' - ',
-	        message.text
+	        _react2['default'].createElement('br', null),
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'flex' },
+	          message.text,
+	          ' ',
+	          _react2['default'].createElement(
+	            'span',
+	            { className: 'span' },
+	            formattedTime
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -20104,11 +20136,15 @@
 	    value: function render() {
 	      return _react2['default'].createElement(
 	        'div',
-	        null,
+	        { className: 'message-list' },
 	        _react2['default'].createElement(
 	          'form',
-	          { onSubmit: this.onSubmit.bind(this) },
-	          _react2['default'].createElement('input', { type: 'text', className: 'form-control', ref: 'text', placeholder: 'Please type a message...' })
+	          { className: 'form-message', onSubmit: this.onSubmit.bind(this) },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'box-input' },
+	            _react2['default'].createElement('input', { type: 'text', className: 'form-control', ref: 'text', placeholder: 'Please type a message...' })
+	          )
 	        )
 	      );
 	    }
@@ -20158,24 +20194,28 @@
 	    value: function render() {
 	      return _react2["default"].createElement(
 	        "div",
-	        null,
+	        { className: "users-list" },
 	        _react2["default"].createElement(
-	          "h3",
-	          null,
-	          "Users (",
-	          this.props.users.length,
-	          ")"
-	        ),
-	        _react2["default"].createElement(
-	          "ul",
-	          { className: "list-group" },
-	          this.props.users.map(function (user, i) {
-	            return _react2["default"].createElement(
-	              "li",
-	              { className: "list-group-item", user: user, key: i },
-	              user.name
-	            );
-	          })
+	          "div",
+	          { className: "well" },
+	          _react2["default"].createElement(
+	            "h3",
+	            { className: "user user1" },
+	            "Users(",
+	            this.props.users.length,
+	            ")"
+	          ),
+	          _react2["default"].createElement(
+	            "ul",
+	            { className: "list-group" },
+	            this.props.users.map(function (user, i) {
+	              return _react2["default"].createElement(
+	                "li",
+	                { className: "list-group-item", user: user, key: i },
+	                user.name
+	              );
+	            })
+	          )
 	        )
 	      );
 	    }
@@ -20237,16 +20277,16 @@
 	    value: function render() {
 	      return _react2['default'].createElement(
 	        'div',
-	        null,
+	        { className: 'box' },
 	        _react2['default'].createElement(
 	          'h3',
-	          null,
+	          { className: 'login' },
 	          'Chat Login'
 	        ),
 	        _react2['default'].createElement(
 	          'form',
-	          { onSubmit: this.onSubmit.bind(this) },
-	          _react2['default'].createElement('input', { type: 'text', className: 'form-control', name: 'uname', placeholder: 'Choose a UserName' })
+	          { className: 'form', onSubmit: this.onSubmit.bind(this) },
+	          _react2['default'].createElement('input', { className: 'input', type: 'text', name: 'uname', placeholder: 'Choose a UserName' })
 	        )
 	      );
 	    }
