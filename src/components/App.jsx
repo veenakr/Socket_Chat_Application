@@ -31,7 +31,6 @@ class App extends React.Component {
 
   connect() {
     this.setState({ status: 'connected' });
-    console.log('Connected: ' + this.socket.id);
   }
 
   onMessageAdded(message) {
@@ -49,7 +48,6 @@ class App extends React.Component {
   }
 
   disconnect(users) {
-    console.log('disConnected: ' + this.socket.id);
     this.setState({ users });
     this.setState({ status: 'disconnected' });
   }

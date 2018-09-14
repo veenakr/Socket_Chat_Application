@@ -19844,7 +19844,6 @@
 	    key: 'connect',
 	    value: function connect() {
 	      this.setState({ status: 'connected' });
-	      console.log('Connected: ' + this.socket.id);
 	    }
 	  }, {
 	    key: 'onMessageAdded',
@@ -19870,7 +19869,6 @@
 	  }, {
 	    key: 'disconnect',
 	    value: function disconnect(users) {
-	      console.log('disConnected: ' + this.socket.id);
 	      this.setState({ users: users });
 	      this.setState({ status: 'disconnected' });
 	    }
